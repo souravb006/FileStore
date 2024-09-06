@@ -13,37 +13,37 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "21100083"))
+APP_ID = int(os.environ.get("APP_ID", "20679071"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "8980ecdc34880454c2e31eec10033f5b")
+API_HASH = os.environ.get("API_HASH", "3d088893c7ff5b84c429eadf6df88ab4")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002209246591"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002281977970"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "Sourav00876")
+OWNER = os.environ.get("OWNER", "orriotel")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6402721511"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5408428203"))
 
 #Port
 PORT = os.environ.get("PORT", "8030")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://oliviacalfe329:Sv9RIXu2wSszIwb1@cluster0.3nlfkpo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://wixstocle:9osAvonSWkH8ms3m@cluster0.tonjr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002245466708"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002152956062"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002367729265"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʙᴀᴋᴋᴀᴀᴀ!! {first}\n\n ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.</b>")
 try:
-    ADMINS=[6402721511]
+    ADMINS=[5408428203]
     for x in (os.environ.get("ADMINS", "7023006442").split()):
         ADMINS.append(int(x))
 except ValueError:
